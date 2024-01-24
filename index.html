@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/flash.svg">
+    <title>Analytics Dashboard</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headerDiv">
+            <h2 class="logo">Dashboard</h2>
+            <label for="searchBar" class="search">
+                <img src="assets/search.svg" alt="search-icon">
+                <input type="text" placeholder="Search..." id="search">
+            </label>
+            <div class="dateDiv">
+                <img src="assets/calender.svg" alt="">
+                <span class="date">November 15, 2023</span>
+            </div>
+            <div class="bellIcon">
+                <img src="assets/bell.svg" alt="">
+            </div>
+            <div class="profileDiv">
+                <img src="assets/user.png" alt="" class="profilePic">
+                <div class="names">
+                    <span class="name">Justin Bergson</span>
+                    <span class="email">Justin@gmail.com</span>
+                </div>
+                <img src="assets/dropdown.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <button class="navbarBtns flash"><img src="assets/flash.svg" alt=""></button>
+        <button class="navbarBtns"><img src="assets/menu.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/vuesax.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/profile.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/box.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/discount.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/info.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <div class="themeBtnContainer">
+            <button class="themeBtn light"><img src="assets/bright.svg" alt=""></button>
+            <button class="themeBtn dark"><img src="assets/moon.svg" alt=""></button>
+        </div>
+        <button class="navbarBtns"><img src="assets/arrowRight.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/setting.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+        <button class="navbarBtns"><img src="assets/logout.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
+    </nav>
+    <main>
+        <div class="barChart">
+            <div class="sectionHeader">
+                <h3 class="salesTrend">Sales Trend</h3>
+                <span>Sort by:</span>
+                <div class="profileDiv">
+                    <span>Weekly</span>
+                    <img src="assets/dropdown.svg" alt="">
+                </div>
+            </div>
+            <div class="figureContainer">
+                <span>50.00</span>
+                <span>40.00</span>
+                <span>30.00</span>
+                <span>20.00</span>
+                <span>10.00</span>
+                <span>5.00</span>
+                <span>0</span>
+            </div>
+            <div class="dashlineContainer">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <img src="assets/line.svg" alt="">
+                <div class="barContainer">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                    <div class="bar bar5"></div>
+                    <div class="bar bar6"></div>
+                    <div class="bar bar7"></div>
+                    <div class="bar bar8"></div>
+                    <div class="bar bar9"></div>
+                    <div class="bar bar10"></div>
+                    <div class="bar bar11"></div>
+                    <div class="bar bar12"></div>
+                </div>
+            </div>
+            <div class="monthContainer">
+                <span class="month">Jan</span>
+                <span class="month">Feb</span>
+                <span class="month">Mar</span>
+                <span class="month">Apr</span>
+                <span class="month">May</span>
+                <span class="month">Jun</span>
+                <span class="month">Jul</span>
+                <span class="month">Aug</span>
+                <span class="month">Sep</span>
+                <span class="month">Oct</span>
+                <span class="month">Nov</span>
+                <span class="month">Dec</span>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="sectionHeader">
+                <h3 class="salesTrend">Last Orders</h3>
+                <span class="seeAll">See All</span>
+            </div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Invoices</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="profileDivtd">
+                            <img src="assets/person1.png" alt="">
+                            <span>Marcus Bergson</span>
+                        </td>
+                        <td class="dates">Nov 15, 2023</td>
+                        <td>$80,000</td>
+                        <td class="status">Paid</td>
+                        <td>
+                            <span>View</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profileDivtd">
+                            <img src="assets/person5.png" alt="">
+                            <span>Jaydon Vaccaro</span>
+                        </td>
+                        <td class="dates">Nov 15, 2023</td>
+                        <td>$150,000</td>
+                        <td class="status refund">Refund</td>
+                        <td>
+                            <span>View</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profileDivtd">
+                            <img src="assets/person4.png" alt="">
+                            <span>Corey Schleifer</span>
+                        </td>
+                        <td class="dates">Nov 14, 2023</td>
+                        <td>$87,000</td>
+                        <td class="status">Paid</td>
+                        <td>
+                            <span>View</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profileDivtd">
+                            <img src="assets/person3.png" alt="">
+                            <span>Cooper Press</span>
+                        </td>
+                        <td class="dates">Nov 14, 2023</td>
+                        <td>$100,000</td>
+                        <td class="status refund">Refund</td>
+                        <td>
+                            <span>View</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profileDivtd">
+                            <img src="assets/person2.png" alt="">
+                            <span>Phillip Lubin</span>
+                        </td>
+                        <td class="dates">Nov 13, 2023</td>
+                        <td>$78,000</td>
+                        <td class="status">Paid</td>
+                        <td>
+                            <span>View</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="orderGraphs"></div>
+        <div class="salesReport"></div>
+    </main>
+</body>
+</html>
