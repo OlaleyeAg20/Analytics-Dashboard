@@ -547,7 +547,7 @@ table{
         flex-direction: column;
         align-items: center!important;
         justify-content: center!important;
-        padding-left: 0;
+        padding-left: 1rem;
     }
 
     .logo{
@@ -565,6 +565,6 @@ table{
 
 @media screen and (max-width: 720px) {
     #names, .dropdown{
-        display: none!important;
+        display: none;
     }
 }
