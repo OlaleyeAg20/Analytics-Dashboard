@@ -29,11 +29,11 @@
             </div>
             <div class="profileDiv">
                 <img src="assets/user.png" alt="" class="profilePic">
-                <div class="names">
+                <div id="names" class="names">
                     <span class="name">Justin Bergson</span>
                     <span class="email">Justin@gmail.com</span>
                 </div>
-                <img src="assets/dropdown.svg" alt="">
+                <img class="dropdown" src="assets/dropdown.svg" alt="">
             </div>
         </div>
     </header>
@@ -84,36 +84,67 @@
                 <img src="assets/line.svg" alt="">
                 <img src="assets/line.svg" alt="">
                 <div class="barContainer">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
-                    <div class="bar bar4"></div>
-                    <div class="bar bar5"></div>
-                    <div class="bar bar6"></div>
-                    <div class="bar bar7"></div>
-                    <div class="bar bar8"></div>
-                    <div class="bar bar9"></div>
-                    <div class="bar bar10"></div>
-                    <div class="bar bar11"></div>
-                    <div class="bar bar12"></div>
+                    <div class="bar bar1"><span>Jan</span></div>
+                    <div class="bar bar2"><span>Feb</span></div>
+                    <div class="bar bar3"><span>Mar</span></div>
+                    <div class="bar bar4"><span>Apr</span></div>
+                    <div class="bar bar5"><span>May</span></div>
+                    <div class="bar bar6"><span>Jun</span></div>
+                    <div class="bar bar7"><span>Jul</span></div>
+                    <div class="bar bar8"><span>Aug</span></div>
+                    <div class="bar bar9"><span>Sep</span></div>
+                    <div class="bar bar10"><span>Oct</span></div>
+                    <div class="bar bar11"><span>Nov</span></div>
+                    <div class="bar bar12"><span>Dec</span></div>
                 </div>
             </div>
-            <div class="monthContainer">
-                <span class="month">Jan</span>
-                <span class="month">Feb</span>
-                <span class="month">Mar</span>
-                <span class="month">Apr</span>
-                <span class="month">May</span>
-                <span class="month">Jun</span>
-                <span class="month">Jul</span>
-                <span class="month">Aug</span>
-                <span class="month">Sep</span>
-                <span class="month">Oct</span>
-                <span class="month">Nov</span>
-                <span class="month">Dec</span>
+        </div>
+        <div class="orderGraphs">
+            <div class="graphsContent">
+                <div class="waveGraph">
+                    <span><img src="assets/boxtick.svg" alt=""></span>
+                    <span><img src="assets/graph1.svg" alt=""></span>
+                </div>
+                <p class="graphBody">Total Order</p>
+                <h2 class="figure">350</h2>
+                <div class="comparison">
+                    <span><img src="assets/arrowup.svg" alt="">23.5%</span> vs previous month
+                </div>
+            </div>
+            <div class="graphsContent">
+                <div class="waveGraph">
+                    <span><img src="assets/3drotate.svg" alt=""></span>
+                    <span><img src="assets/graph2.svg" alt=""></span>
+                </div>
+                <p class="graphBody">Total Refund</p>
+                <h2 class="figure">270</h2>
+                <div class="comparison">
+                    <span class="error"><img src="assets/Group.svg" alt="">23.5%</span> vs previous month
+                </div>
+            </div>
+            <div class="graphsContent">
+                <div class="waveGraph">
+                    <span><img src="assets/shoppingcart.svg" alt=""></span>
+                    <span><img src="assets/graph3.svg" alt=""></span>
+                </div>
+                <p class="graphBody">Average Sales</p>
+                <h2 class="figure">1567</h2>
+                <div class="comparison">
+                    <span class="error"><img src="assets/Group.svg" alt="">23.5%</span> vs previous month
+                </div>
+            </div>
+            <div class="graphsContent">
+                <div class="waveGraph">
+                    <span><img src="assets/coin.svg" alt=""></span>
+                    <span><img src="assets/graph1.svg" alt=""></span>
+                </div>
+                <p class="graphBody">Total Income</p>
+                <h2 class="figure">$350.000</h2>
+                <div class="comparison">
+                    <span><img src="assets/arrowup.svg" alt="">23.5%</span> vs previous month
+                </div>
             </div>
         </div>
-        <div class="orderGraphs"></div>
         <div class="orders">
             <div class="sectionHeader">
                 <h3 class="salesTrend">Last Orders</h3>
@@ -191,7 +222,47 @@
                 </tbody>
             </table>
         </div>
-        <div class="salesReport"></div>
+        <div class="salesReport">
+            <div class="ordersHeader">
+                <h3 class="salesTrend">Top Platform</h3>
+                <span class="seeAll">See All</span>
+            </div>
+            <div id="orderBody" class="orderBody">
+                <div class="platform">
+                    <h3 class="salesTrend">Book Bazaar</h3>
+                    <div class="rangeDivContainer"><div class="range"></div></div>
+                    <div class="platformAmount">
+                        <span class="platformFigure"> $2,500,000</span>
+                        <span>+15%</span>
+                    </div>
+                </div>
+                <div class="platform">
+                    <h3 class="salesTrend">Book Bazaar</h3>
+                    <div class="rangeDivContainer"><div class="range"></div></div>
+                    <div class="platformAmount">
+                        <span class="platformFigure"> $2,500,000</span>
+                        <span>+15%</span>
+                    </div>
+                </div>
+                <div class="platform">
+                    <h3 class="salesTrend">Book Bazaar</h3>
+                    <div class="rangeDivContainer"><div class="range"></div></div>
+                    <div class="platformAmount">
+                        <span class="platformFigure"> $2,500,000</span>
+                        <span>+15%</span>
+                    </div>
+                </div>
+                <div class="platform">
+                    <h3 class="salesTrend">Book Bazaar</h3>
+                    <div class="rangeDivContainer"><div class="range"></div></div>
+                    <div class="platformAmount">
+                        <span class="platformFigure"> $2,500,000</span>
+                        <span>+15%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
