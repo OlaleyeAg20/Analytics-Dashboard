@@ -29,6 +29,16 @@ lightBtn.addEventListener('click', ()=>{
     darkBtn.style.background = "none"
 })
 
+document.querySelector('.menuBtn').addEventListener('click',()=>{
+    document.querySelector('nav').style.display = 'flex'
+    document.querySelector('.closeBtn').style.display = 'block'
+})
+
+document.querySelector('.closeBtn').addEventListener('click',()=>{
+    document.querySelector('nav').style.display = 'none'
+    document.querySelector('.closeBtn').style.display = 'none'
+})
+
 const platforms = [
     {
         platform: "Book Bazaar",

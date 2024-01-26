@@ -123,6 +123,20 @@ header{
     padding-left: .5rem;
 }
 
+.menuBtn, .closeBtn{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    display: none;
+}
+
+.closeBtn{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 #search{
     width: 100%;
     border-radius: inherit;
@@ -602,6 +616,10 @@ table{
     }
     .orderGraphs{
         flex-direction: column;
+    }
+
+    .menuBtn{
+        display: block;
     }
 
     .orderGraphs > *{
