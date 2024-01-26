@@ -3,6 +3,7 @@
     color: #26282C;
     /* Body Text/Inter/Medium/Medium */
     font-family: Inter, sans-serif;
+    outline: none;
 }
 
 body{
