@@ -1,6 +1,33 @@
 console.log("welcome")
-
+const darkBtn = document.getElementById('dark')
+const lightBtn = document.getElementById('light')
 const orderBody = document.getElementById("orderBody")
+
+darkBtn.addEventListener('click', ()=>{
+    document.body.classList.add('darkmode')
+    document.querySelector('.themeBtnContainer').classList.add('darkmode')
+    document.querySelector('header').classList.add('darkmode')
+    document.querySelector('.barChart').classList.add('darkmode2')
+    document.querySelector('.orders').classList.add('darkmode2')
+    document.querySelector('nav').classList.add('darkmode2')
+    document.querySelector('.salesReport').classList.add('darkmode2')
+    document.querySelector('.orderGraphs').classList.add('darkmode3')
+    lightBtn.style.background = "none"
+    darkBtn.style.background = "#34CAA5"
+})
+
+lightBtn.addEventListener('click', ()=>{
+    document.querySelector('.themeBtnContainer').classList.remove('darkmode')
+    document.body.classList.remove('darkmode')
+    document.querySelector('.barChart').classList.remove('darkmode2')
+    document.querySelector('.orders').classList.remove('darkmode2')
+    document.querySelector('nav').classList.remove('darkmode2')
+    document.querySelector('.salesReport').classList.remove('darkmode2')
+    document.querySelector('.orderGraphs').classList.remove('darkmode3')
+    document.querySelector('header').classList.remove('darkmode')
+    lightBtn.style.background = "#34CAA5"
+    darkBtn.style.background = "none"
+})
 
 const platforms = [
     {

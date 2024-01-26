@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/flash.svg">
     <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +30,7 @@
             <div class="bellIcon">
                 <img src="assets/bell.svg" alt="">
             </div>
-            <div class="profileDiv">
+            <div class="profileDiv" id="profileDiv">
                 <img src="assets/user.png" alt="" class="profilePic">
                 <div id="names" class="names">
                     <span class="name">Justin Bergson</span>
@@ -46,8 +49,8 @@
         <button class="navbarBtns"><img src="assets/discount.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
         <button class="navbarBtns"><img src="assets/info.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
         <div class="themeBtnContainer">
-            <button class="themeBtn light"><img src="assets/bright.svg" alt=""></button>
-            <button class="themeBtn dark"><img src="assets/moon.svg" alt=""></button>
+            <button class="themeBtn light" id="light"><img src="assets/bright.svg" alt=""></button>
+            <button class="themeBtn dark" id="dark"><img src="assets/moon.svg" alt=""></button>
         </div>
         <button class="navbarBtns"><img src="assets/arrowRight.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
         <button class="navbarBtns"><img src="assets/setting.svg" alt=""><img src="assets/active.svg" alt="" class="activeBorder"></button>
@@ -63,26 +66,18 @@
                     <img src="assets/dropdown.svg" alt="">
                 </div>
             </div>
-            <div class="figureContainer">
-                <span>50.00</span>
-                <span>40.00</span>
-                <span>30.00</span>
-                <span>20.00</span>
-                <span>10.00</span>
-                <span>5.00</span>
-                <span>0</span>
-            </div>
             <div class="dashlineContainer">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
-                <img src="assets/line.svg" alt="">
+                <table  id="graphTable">
+                    <tbody>
+                        <tr><td><span>50.00</span></td></tr>
+                        <tr><td><span>40.00</span></td></tr>
+                        <tr><td><span>30.00</span></td></tr>
+                        <tr><td><span>20.00</span></td></tr>
+                        <tr><td><span>10.00</span></td></tr>
+                        <tr><td><span>5.00</span></td></tr>
+                        <tr><td><span>0</span></td></tr>
+                    </tbody>
+                </table>
                 <div class="barContainer">
                     <div class="bar bar1"><span>Jan</span></div>
                     <div class="bar bar2"><span>Feb</span></div>
@@ -150,7 +145,7 @@
                 <h3 class="salesTrend">Last Orders</h3>
                 <span class="seeAll">See All</span>
             </div>
-            <table>
+            <table class="table">
                 <thead>
                     <th>Name</th>
                     <th>Date</th>

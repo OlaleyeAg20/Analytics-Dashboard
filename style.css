@@ -18,6 +18,13 @@ header{
     padding: .5rem;
     border-bottom: 1px solid #DADDDD;
     overflow: hidden;
+    position: sticky;
+    padding-top: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #FAFAFA;
 }
 
 .headerDiv{
@@ -137,6 +144,7 @@ nav{
     background: #F7F8FA;
     padding: 1rem;
     gap: .5rem;
+    z-index: 20;
 }
 
 .navbarBtns, .themeBtnContainer button{
@@ -192,7 +200,7 @@ nav{
 }
 
 .light{
-    background: #34CAA5!important;
+    background: #34CAA5;
 }
 
 .activeBorder{
@@ -375,11 +383,13 @@ main{
     padding: 1rem;
 }
 
-table, td, th, tr{
+.table, .table td, .table th, .table tr{
     text-align: left;
     border-bottom: 2px solid #EDF2F6;
     border-collapse: collapse;
 }
+
+
 
 td,th{
     padding-block: 1rem;
@@ -394,7 +404,7 @@ table{
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
-    border: none;
+    border: none!important;
 }
 
 .status{
@@ -542,6 +552,22 @@ table{
     background: var(--Purple, #6160DC);
 }
 
+#graphTable tr td{
+    border-bottom: 1px dashed #EAEAEA;
+    padding: 1.04rem;
+    position: relative;
+}
+
+#graphTable tr td span{
+    position: absolute;
+    bottom: -.6rem;
+    left: -3rem;
+}
+
+table{
+    border-collapse: collapse;
+}
+
 @media screen and (max-width: 900px) {
     main{
         flex-direction: column;
@@ -554,6 +580,10 @@ table{
         margin-left: 0;
     }
 
+    .barchart{
+        width: min(100%, 480px)!important;
+    }
+
     main > div{
         width: 100%!important;
         overflow: auto;
@@ -561,10 +591,78 @@ table{
     nav{
         display: none;
     }
+    .dashlineContainer{
+        margin-inline: auto;
+    }
 }
 
 @media screen and (max-width: 720px) {
     #names, .dropdown{
         display: none;
     }
+    .orderGraphs{
+        flex-direction: column;
+    }
+
+    .orderGraphs > *{
+        width: 100%;
+    }
+    .dashlineContainer{
+        margin: 0;
+        padding: 0;
+    }
+    .dashlineContainer table{
+        width: 480px;
+        overflow-x: auto;
+        overflow-y: visible;
+        padding-block: 0;
+    }
+    
+    .barContainer{
+        width: 480px;
+    }
+    
+    #graphTable tr td span{
+        position: absolute;
+        bottom: -.6rem;
+        left: -.5rem;
+    }
+
+    #graphTable tbody{
+        padding-left: 3rem;
+    }
+    .search,.dateDiv,.bellIcon{
+        display: none;
+    }
+    #profileDiv{
+        border-radius: 50%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.darkmode{
+    background: #26282C;
+    border-color: #787486;
+}
+
+.darkmode *{
+    color: #EBECF2;
+}
+
+.darkmode2{
+    background: #3A3F51;
+    border: none;
+}
+
+.darkmode3 div{
+    background: #3A3F51;
+    border: none;
+}
+
+nav button{
+    aspect-ratio: 1;
 }
