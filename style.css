@@ -583,6 +583,48 @@ table{
     border-collapse: collapse;
 }
 
+.closeBtn{
+    z-index: 2
+}
+
+.headerDiv2{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #FFF;
+    z-index: 1;
+   
+}
+
+.search2{
+    display: flex;
+    width: 200px;
+    margin-left: 60px;
+    padding: .8rem;
+    border: 1.2px solid;
+    border-radius: .5rem;
+}
+
+.dateDiv2{
+    margin-left: 60px;
+}
+.bellIcon2{
+    margin-left: 70px;
+}
+
+.search2 input{
+    border: none;
+    width: 100px;
+    background: none;
+}
+
 @media screen and (max-width: 900px) {
     main{
         flex-direction: column;
@@ -639,6 +681,7 @@ table{
     
     .barContainer{
         width: 480px;
+        bottom: 15px;
     }
     
     #graphTable tr td span{
@@ -650,7 +693,7 @@ table{
     #graphTable tbody{
         padding-left: 3rem;
     }
-    .search,.dateDiv,.bellIcon{
+    .search,.dateDiv, .bellIcon{
         display: none;
     }
     #profileDiv{
@@ -660,6 +703,10 @@ table{
         align-items: center;
         justify-content: center;
     }
+    
+    .headerDiv2{
+        gap: .5rem;
+    }    
 
 }
 
@@ -684,4 +731,32 @@ table{
 
 nav button{
     aspect-ratio: 1;
+}
+.tooltip{
+    width: 50px;
+    background: black;
+    height: 20px;
+    color: #FFF;
+    position: absolute;
+    top: -30px;
+    right: -12px;
+    text-align: center;
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip::after{
+      content: " ";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border: 5px solid transparent;
+      border-top-color: black;
+}
+
+.bar:hover .tooltip{
+    display: flex;
 }
